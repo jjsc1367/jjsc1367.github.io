@@ -1,11 +1,10 @@
-<!DOCTYPE html>
 <html>
   <head>
     <link rel="icon" href="Artboard 1.png" sizes="16x16" type="image/png">
-    <title>Joshua James</title>
+    <title>Joshua Jane</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
     <style>
-
+      
       @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
             a {color:#f5e9de;text-decoration:none;}
         a:hover {color:#FFAE7A;}
@@ -50,7 +49,7 @@
           position: relative;
           /*min-height: 10%;*/
         }
-
+        
       .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
         position: relative;
         opacity: 1; /*was 0.65*/
@@ -58,7 +57,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-
+        /*opacity: 90%;*/
       }
       .bgimg-1 {
         background-image: url("jjcrop.png");
@@ -76,8 +75,8 @@
       }
 
       .bgimg-4 {
-        background-image: url("chairs.jpg");
-        min-height: 80%;
+        background-image: url("bwguitar1.jpg");
+        min-height: 70%;
       }
 
         .caption {
@@ -96,7 +95,7 @@
         font-size: 100px;
         letter-spacing: 10px;
       }
-
+      
         .tag {
         position: absolute;
         left: 0;
@@ -113,7 +112,7 @@
         font-size: 100px;
         letter-spacing: 10px;
       }
-
+      
         @media screen and (max-width: 600px) {
           .tag {
             top: 0%;
@@ -123,7 +122,7 @@
             font-size: 30px;
       }
         }
-
+      
         @media screen and (max-width: 600px) {
           .caption {
             top: auto;
@@ -140,13 +139,21 @@
         text-transform: uppercase;
         font: 20px "Lato", sans-serif;
         color:#f5e9de;
+        text-align: left;
       }
-
+      
+      h2 {
+          font: 1.1vw 'Lato', sans-serif;
+          color:#f5e9de;
+          letter-spacing: 2px;
+          text-align: left;
+      }
+      
       p {
         letter-spacing: 3px;
         /*text-transform: uppercase;*/
         font: 2.4vw "Lato", sans-serif;
-        color:#f5e9de;j
+        color:#f5e9de;
       }
 
       .cloud {
@@ -170,7 +177,7 @@
             position: absolute;
         }
       .title {
-            margin-top: -1.5%;
+            margin-top: 0%;
             margin-right: auto;
             margin-left: auto;
             width: 100%;
@@ -264,26 +271,51 @@
         * {
           box-sizing: border-box;
         }
-
+        
         /* Create three equal columns that floats next to each other */
         .column {
+          padding-left: 90px;
+          padding-right: 10px;
+          padding-top: 10px;
+          padding-bottom: 10px;
           float: left;
-          width: 20%;
-          padding: 10px;
-          height: 300px; /* Should be removed. Only for demonstration */
+          width: 33%;
+          
         }
-
+        
+        .column2 {
+          float: left;
+          width: 50%;
+          padding-left: 250px;
+          padding-right: 10px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+        
+        .column3 {
+          float: left;
+          width: 50%;
+          padding-left: 100px;
+          padding-right: 10px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+        
         /* Clear floats after the columns */
         .row:after {
           content: "";
           display: table;
           clear: both;
         }
-
+        
         /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
         @media screen and (max-width: 600px) {
-          .column {
+          .column, .column2, .column3 {
             width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
           }
         }
         /*STUFF FOR LYRICS*/
@@ -300,7 +332,7 @@
 
     <div class="bgimg-1">
         <div class="comp">
-            <img class="title" src="jjtitle.png"/>
+            <img class="title" src="comptitle.png"/>
             <img class="outnow" src="novoutnow1.png"/>
         </div>
         <div class="mobile">
@@ -315,7 +347,7 @@
 
 
       <div class="comp">
-            <img class="cloud" src="../Guest House EP.png"/>
+            <img class="cloud" src="cover.png"/>
             <!--play around with switching cloud and ep, see which layout is better-->
             <iframe class="ep" width="20%" height="65%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1198992997&amp;color=%238c92b8&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/josh-carlson-844874447" title="Josh Carlson" target="_blank" style="color: #cccccc; text-decoration: none;"></a><a href="https://soundcloud.com/josh-carlson-844874447/sets/websitetest-1" title="WebsiteTest" target="_blank" style="color: #cccccc; text-decoration: none;"></a></div>
             <!--<iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:7pXu47GoqSYRajmBCjxdD6&amp;size=detail&amp;theme=dark" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>-->
@@ -327,7 +359,7 @@
 
 
       <div class="mobep">
-            <img class="ep" src="Guest House EP.png"/>
+            <img class="ep" src="cover.png"/>
       </div>
 
     </div>
@@ -339,88 +371,244 @@
     </div>
 
     <div style="position:relative;">
-    <div style="color: #777;background-color:black;text-align:center;padding:23% 5%;text-align: justify;">
-      <!--<h3 style="text-align:center;">If I Stay</h3>-->
-
-      <!--lyrics-->
-      <div class="row">
-          <div class="column">
-            <h3 style="font: 2vw 'Lato', sans-serif;" >7THS</h3>
-            <p style="font: 1vw 'Lato', sans-serif;">
-                You know that I'm reckless
-                <br>
-                Stay with me regardless
-                <br>
-                I don't think I'd make it alone
-                <br>
-                To tell you the truth
-                <br>
-                I don't know why you ever
-                <br>
-                Pick up when I hit your phone
-                <br>
-                You know that you're always my baby
-                <br>
-                Usually
-                <br>
-                Things we don't talk about lately
-                <br>
-                You and me
-                <br>
-                Tryna get away from this daydream
-                <br>
-                Used to be
-                <br>
-                This isn't me
-
-            </p>
-          </div>
-          <div class="column">
-            <h3>IF I STAY</h3>
-            <p style="font: 1vw 'Lato', sans-serif;">
-                How long until you tell me
-                <br>
-                The words you want to hear?
-                <br>
-                She said it's never perfect
-                <br>
-                What could be my dear?
-                <br>
-                There&apos;s all these words in my head
-                <br>
-                But she&apos;s already left and now
-                <br>
-                Guess I gotta fix that
-                <br>
-                Cuz when you come around I just
-                <br>
-                Shut my mouth
-                <br>
-                I&apos;m running out of payback
-                <br>
-                If I stay
-                <br>
-                Tell me baby would you run away
-                <br>
-                If I fell for you
-            </p>
-          </div>
-          <div class="column">
-            <h3>Column 3</h3>
-            <p>Some text..</p>
-          </div>
-          <div class="column">
-            <h3>Column 4</h3>
-            <p>Some text..</p>
-          </div>
-          <div class="column">
-            <h3>Column 5</h3>
-            <p>Some text..</p>
-          </div>
+        <div style="color: #777;background-color:black;text-align:center;padding:6% 5%;text-align: justify;">
+          <!--<h3 style="text-align:center;">If I Stay</h3>-->
+          
+              <!--lyrics-->
+              <div class="row">
+                  <div class="column">
+                    <h3 style="font: 2vw 'Lato', sans-serif;" >NEVER KNOWS</h3>
+                    <h2 >
+                        You know that I'm reckless<br>
+                        Stay with me regardless<br>
+                        I don't think I'd make it alone<br>
+                        To tell you the truth<br>
+                        I don't know why you ever<br>
+                        Pick up when I hit your phone<br>
+                        You know that you're always my baby<br>
+                        Usually<br>
+                        Things we don't talk about lately<br>
+                        You and me<br>
+                        Tryna get away from this daydream<br>
+                        Used to be<br>
+                        This isn't me<br>
+                        
+                        Hey my baby never knows<br>
+                        Hey my baby never knows<br>
+                        
+                        She said I was special<br>
+                        But where did she go<br>
+                        She said I'm the real one<br>
+                        But now I don't know<br>
+                        I tell my girl that we'll be alright<br>
+                        If she can read my lips<br>
+                        By the end of the night<br>
+                        But where do we go from here<br>
+                        I'm worried that I'll find out<br>
+                        
+                        Hey my baby never knows<br>
+                        Hey my baby never knows<br>
+                        
+                        Finally feel like I'm better<br>
+                        She already moved on<br>
+                        Now and then I forget her<br>
+                        While I lie in her arms<br>
+                        
+                        Hey my baby never knows<br>
+                        Hey my baby never knows<br>
+                        Hey my baby never knows<br>
+        
+                    </h2>
+                  </div>
+                  <div class="column">
+                    <h3 style="font: 2vw 'Lato', sans-serif;" >IF I STAY</h3>
+                    <h2 >
+                        How long until you tell me<br>
+                        The words you want to hear<br>
+                        She said it's never perfect<br>
+                        What could be my dear<br>
+                        There's all these words in my head<br>
+                        But she's already left and well<br>
+                        Guess I gotta fix that<br>
+                        Cuz when you come around I just<br>
+                        Shut my mouth<br>
+                        I'm running out of payback<br>
+                        
+                        If I stay<br>
+                        Tell me baby would you run away<br>
+                        If I fell for you<br>
+                        
+                        Two weeks now I'm getting lonely<br>
+                        Too fast won't you hold me slowly baby<br>
+                        No clue when she's getting home<br>
+                        To Malibu where I cling to my phone<br>
+                        Now can't we<br>
+                        Pretend you're here while you<br>
+                        Pull me near<br>
+                        Guess I'll always miss that<br>
+                        We could find our way<br>
+                        Back to Monterey<br>
+                        I'm living in a flashback<br>
+                        
+                        If I stay<br>
+                        Tell me baby would you run away<br>
+                        If I fell for you<br>
+                        
+                        If I stay<br>
+                        Tell me baby would you run away<br>
+                        If I fell for you<br>
+                    </h2>
+                  </div>
+                  <div class="column">
+                    <h3 style="font: 2vw 'Lato', sans-serif;" >WIRES</h3>
+                    <h2 >
+                        The wires come undone<br>
+                        Fire in my lungs<br>
+                        Nothing left to say<br>
+                        Left without enough<br>
+                        Imaginary touch<br>
+                        Always fades away<br>
+                        
+                        Nobody tells you what to do<br>
+                        For the real one<br>
+                        Left me standing in my room<br>
+                        But I'm not done<br>
+                        Cuz you and me<br>
+                        Could make it alone<br>
+                        You and me<br>
+                        She's already gone<br>
+                        
+                        The wires come undone<br>
+                        Fire in my lungs<br>
+                        Nothing left to say<br>
+                        Left without enough<br>
+                        Imaginary touch<br>
+                        Always fades away<br>
+                        
+                        And if you're coming back<br>
+                        Won't you tell me<br>
+                        What went wrong<br>
+                        Tried to pull you in again<br>
+                        Cuz I couldn't move on<br>
+                        
+                        The wires come undone<br>
+                        Fire in my lungs<br>
+                        Nothing left to say<br>
+                        Left without enough<br>
+                        Imaginary touch<br>
+                        Always fades away<br>
+                    </h2>
+                  </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="bgimg-4">
+      <div class="caption">
+        <!--<span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>-->
+        <span class="border">Lyrics</span>
+      </div>
     </div>
 
+
+    <div style="position:relative;">
+      <div style="color: #777;background-color:black;text-align:center;padding:6% 5%;text-align: left;">
+            <div class="row">
+                  <div class="column2">
+                    <h3 style="font: 2vw 'Lato', sans-serif;" >YOU LET GO</h3>
+                    <h2 >
+                        You tell me you're heading home<br>
+                        Coming back<br>
+                        The waves crash<br>
+                        Flying up the coast to see you<br>
+                        Late nights<br>
+                        The only time we feel alive<br>
+                        Just us two<br>
+                        
+                        But if your heart changes<br>
+                        By the time we arrive<br>
+                        We're heartbroken<br>
+                        By the end of the night<br>
+                        I'm too stubborn and<br>
+                        You're too quite but<br>
+                        We'll make it alright<br>
+                        
+                        And then you let go<br>
+                        And then you let go<br>
+                        
+                        I tell you I'm staying home<br>
+                        Come on back<br>
+                        The waves crash<br>
+                        Sound never seems to come through<br>
+                        We're drifting<br>
+                        But neither one seems to care<br>
+                        Split in two<br>
+                        
+                        Back to our summer in Michigan<br>
+                        Cross the country just to see you again<br>
+                        Never thought that you and me would end<br>
+                        
+                        And then you let go<br>
+                        And then you let go<br>
+                    </h2>
+                  </div>
+                  <div class="column3">
+                    <h3 style="font: 2vw 'Lato', sans-serif;" >MAKE IT THROUGH</h3>
+                    <h2 >
+                        I've been feeling lonely and<br>
+                        You're my one and only so<br>
+                        Tell me baby what are we gonna do<br>
+                        You know that I want you<br>
+                        Turn around and haunt you<br>
+                        We can make it through<br>
+                        
+                        So tell me baby if you don't<br>
+                        Wanna stay inside<br>
+                        I told you it's the same for me<br>
+                        But I could never hide<br>
+                        How I feel<br>
+                        Build me up<br>
+                        Darling when you gave your love<br>
+                        Now I see<br>
+                        What you mean to me<br>
+                        
+                        I've been feeling lonely and<br>
+                        You're my one and only so<br>
+                        Tell me baby what are we gonna do<br>
+                        You know that I want you<br>
+                        Turn around and haunt you<br>
+                        We can make it through<br>
+                        
+                        Before I knew you<br>
+                        When I pursued you<br>
+                        My babe she said to me<br>
+                        Before we go now<br>
+                        Let's take it slow now<br>
+                        My darling how could we<br>
+                        
+                        My baby she tells me what I wanna hear<br>
+                        I lie in her arms while her smile disappears<br>
+                        Cuz she never tells me what's on her mind<br>
+                        So long my love guess it wasn't our time<br>
+                        
+                        I've been feeling lonely and<br>
+                        You're my one and only so<br>
+                        Tell me baby what are we gonna do<br>
+                        You know that I want you<br>
+                        Turn around and haunt you<br>
+                        We can make it through<br>
+                    </h2>
+                  </div>
+            </div>
+      </div>
+
     </div>
-    </div>
+    
+    
+    
+    
+    
     <div class="bgimg-3">
       <div class="caption">
         <!--<span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>-->
@@ -430,34 +618,34 @@
 
 
     <div style="position:relative;">
-      <div style="color: #777;background-color:black;text-align:center;padding:23% 5%;text-align: left;">
+      <div style="color: #777;background-color:black;text-align:center;padding:28% 5%;text-align: left;">
         <div class="comp">
             <img class="cloud" src="about.png"/>
-            <p class="ep">Joshua James is a multi instrumentalist-producer from Malibu, California. After setting up a home studio during quarantine,
-            he released his debut EP 'Guest House' in February, 2021. Joshua currently runs the recording studio at Middlebury College and has studied
-            with
+            <p class="ep">Joshua Jane is a multi instrumentalist-producer from Malibu, California. After setting up a home studio during quarantine,
+            he released his debut EP 'Guest House' in February, 2021. Joshua currently runs the recording studio at Middlebury College and has studied 
+            with 
             <!--<br>-->
-            <a target="_blank" href="https://twitter.com/toekneesings?lang=en">Tony Hundtoft</a>
+            <a target="_blank" href="https://twitter.com/toekneesings?lang=en">Tony Hundtoft</a>, 
             <!--<a target="_blank" href="https://www.facebook.com/Upstartmusic/">(Upstart)</a>,-->
             <!--<br>-->
-            <a target="_blank" href="http://www.bradbabinski.com/">Brad Babinski</a>
+            <a target="_blank" href="http://www.bradbabinski.com/">Brad Babinski</a>, 
             <!--<a target="_blank" href="http://www.bradbabinski.com/">(Steady Holiday)</a>, -->
             <!--<br>-->
-            and <a target="_blank" href="http://www.ericslick.com">Eric Slick</a>.
+            and <a target="_blank" href="http://www.ericslick.com">Eric Slick</a>. 
             <!--<a target="_blank" href="https://www.drdogmusic.com/">(Dr. Dog)</a>.-->
             </p>
       </div>
         </div>
-
+        
       <div class="mobcloud">
-            <p style="font-size: 4vw" class="mobplayer">Joshua James is a multi instrumentalist-producer from Malibu, California. After setting up a home studio during quarantine,
-            he released his debut EP 'Guest House' in February, 2021.
-            Joshua currently runs the recording studio at Middlebury College and has studied             with
+            <p style="font-size: 4vw" class="mobplayer">Joshua Jane is a multi instrumentalist-producer from Malibu, California. After setting up a home studio during quarantine,
+            he released his debut EP 'Guest House' in February, 2021. 
+            Joshua currently runs the recording studio at Middlebury College and has studied             with 
             <!--<br>-->
-            <a target="_blank" href="https://twitter.com/toekneesings?lang=en">Tony Hundtoft</a>
+            <a target="_blank" href="https://twitter.com/toekneesings?lang=en">Tony Hundtoft</a>, 
             <!--<a target="_blank" href="https://www.facebook.com/Upstartmusic/">(Upstart)</a>,-->
             <!--<br>-->
-            <a target="_blank" href="http://www.bradbabinski.com/">Brad Babinski</a>
+            <a target="_blank" href="http://www.bradbabinski.com/">Brad Babinski</a>, 
             <!--<a target="_blank" href="http://www.bradbabinski.com/">(Steady Holiday)</a>, -->
             <!--<br>-->
             and <a target="_blank" href="http://www.ericslick.com">Eric Slick</a>.
