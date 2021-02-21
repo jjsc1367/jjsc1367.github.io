@@ -64,7 +64,7 @@
         min-height: 100%;
       }
 
-      .bgimg-2 {
+      .bgimg-4 {
         background-image: url("rrh.jpg");
         min-height: 70%;
       }
@@ -74,8 +74,8 @@
         min-height: 70%;
       }
 
-      .bgimg-4 {
-        background-image: url("newbwguitar.jpeg");
+      .bgimg-2 {
+        background-image: url("sky.jpeg");
         min-height: 70%;
       }
 
@@ -99,7 +99,7 @@
         .tag {
         position: absolute;
         left: 0;
-        top: 50%;
+        top: 48%;
         transform: translate(0%, -50%);
         width: 100%;
         text-align: center;
@@ -109,16 +109,42 @@
         .tag span.border {
         color: #f5e9de; /**/
         padding: 18px;
-        font-size: 100px;
+        font-size: 8vw;
         letter-spacing: 10px;
       }
       
         @media screen and (max-width: 600px) {
           .tag {
-            top: 0%;
-            transform: translate(0%, 0%);
+            display: none;
           }
           .tag span.border {
+            font-size: 30px;
+      }
+        }
+        
+        .tagmob {
+        position: absolute;
+        left: 0;
+        top: 42%;
+        transform: translate(0%, -50%);
+        width: 100%;
+        text-align: center;
+        color: #000;
+        font-family: 'Permanent Marker';
+        display: none;
+      }
+        .tagmob span.border {
+        color: #f5e9de; /**/
+        padding: 18px;
+        font-size: 8vw;
+        letter-spacing: 10px;
+      }
+      
+        @media screen and (max-width: 600px) {
+          .tagmob {
+            display: inline;
+          }
+          .tagmob span.border {
             font-size: 30px;
       }
         }
@@ -137,9 +163,15 @@
       h3 {
         letter-spacing: 5px;
         text-transform: uppercase;
-        font: 20px "Lato", sans-serif;
+        font: 2vw "Lato", sans-serif;
         color:#f5e9de;
         text-align: left;
+      }
+      @media screen and (max-width: 600px) {
+        h3 {
+           font: 8vw "Lato", sans-serif;
+           text-align: center;
+        }
       }
       
       h2 {
@@ -147,6 +179,12 @@
           color:#f5e9de;
           letter-spacing: 2px;
           text-align: left;
+      }
+      @media screen and (max-width: 600px) {
+        h2 {
+            font: 3.5vw "Lato", sans-serif;
+            text-align: center;
+        }
       }
       
       p {
@@ -157,7 +195,7 @@
       }
 
       .cloud {
-            margin-top: -17.33%;
+            margin-top: -7.33%;
             margin-left: 50%;
             width: 35%;
             height: 35vw;
@@ -170,7 +208,7 @@
           }
         }
       .ep {
-            margin-top: -17.33%;
+            margin-top: -7.33%;
             margin-left: 5%;
             width: 34.75%;
             /*height: 34.75vw;*/
@@ -191,8 +229,8 @@
             position: absolute;
       }
         .titlem {
-            margin-top: -1.5%;
-            margin-left: -53%;
+            margin-top: 0%;
+            margin-left: -50%;
             /*height: 72.5%;*/
             width: 200%;
             position: absolute;
@@ -210,7 +248,7 @@
 
       /* Turn off parallax scrolling for tablets and phones */
       @media only screen and (max-device-width: 1024px) {
-        .bgimg-1, .bgimg-2, .bgimg-3 {
+        .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
           background-attachment: scroll;
             }
         }
@@ -275,9 +313,9 @@
         /* Create three equal columns that floats next to each other */
         .column {
           padding-left: 90px;
-          padding-right: 10px;
-          padding-top: 10px;
-          padding-bottom: 10px;
+          padding-right: 1px;
+          padding-top: 9px;
+          padding-bottom: 9px;
           float: left;
           width: 33%;
           
@@ -312,21 +350,153 @@
         @media screen and (max-width: 600px) {
           .column, .column2, .column3 {
             width: 100%;
-            padding-left: 10px;
-            padding-right: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
             padding-top: 10px;
             padding-bottom: 10px;
           }
         }
         /*STUFF FOR LYRICS*/
-
+      h4 {
+          font-size: 5.4vw;
+          color:#f5e9de;
+          letter-spacing:2px;
+          word-spacing:2px;
+          font-family: 'Permanent Marker';
+          text-align: center;
+          line-height: 120%;
+          top:20%;
+      }
+      
+        .spotifyfollow {
+            margin-top: 33%;
+            margin-left: 36.5%;
+            /*height: 34.75vw;*/
+            position: absolute;
+        }
+        .spotifyalbum {
+            margin-top: 40%;
+            margin-left: 34.5%;
+            /*width: 34.75%;*/
+            /*height: 34.75vw;*/
+            position: absolute;
+        }
+        
+        .spotifyfollowmob {
+            margin-top: -40%;
+            margin-left: 56%;
+            width: 34.25%;
+            height: 80vw;
+            position: absolute;
+        }
+        .spotifyalbummob {
+            margin-top: -30%;
+            margin-left: 50.25%;
+            width: 34.25%;
+            height: 80vw;
+            position: absolute;
+        }
+        
+        .layoutr {
+            margin-top: -7.33%;
+            margin-left: 50%;
+            width: 35%;
+            position: absolute;
+        }
+        
+        .layoutl {
+            margin-top: -7.33%;
+            margin-left: 5%;
+            width: 35%;
+            /*height: 34.75vw;*/
+            position: absolute;
+        }
+        
+        div.moblayoutl {
+            display: none;
+        }
+        
+        @media screen and (max-width: 600px) {
+          div.moblayoutl {
+            position: absolute;
+            display: block;
+            margin-top: -177.5%;
+            margin-left: -8%;
+            width: 235%;
+          }
+        }
+        
+        div.moblayoutr {
+            display: none;
+        }
+        @media screen and (max-width: 600px) {
+          div.moblayoutr {
+            position: absolute;
+            display: block;
+            margin-top: -87.5%;
+            margin-left: -8%;
+            width: 235%;
+          }
+        }
+        
+        div.spacer {
+            display: none;
+        }
+        @media screen and (max-width: 600px) {
+          div.spacer {
+            display: block;
+            margin-top: 0%;
+            margin-left: -8%;
+          }
+        }
+        
+        h5 {
+          font-size: 3.6vw;
+          color:#f5e9de;
+          letter-spacing:1px;
+          word-spacing:2px;
+          /*font: "Lato", sans-serif;*/
+          font-family: 'Permanent Marker';
+          text-align: center;
+          line-height: 180%;
+          top:60%;
+          left:20%;
+          position: absolute;
+      }
+      
+      h6 {
+          font-size: 8vw;
+          color:#f5e9de;
+          letter-spacing:1px;
+          word-spacing:2px;
+          /*font: "Lato", sans-serif;*/
+          font-family: 'Permanent Marker';
+          text-align: center;
+          line-height: 150%;
+      }
+      
+      div.moblinks {
+            display: none;
+        }
+        @media screen and (max-width: 600px) {
+          div.moblinks {
+            position: relative;
+            display: block;
+            margin-top: -65%;
+            margin-left: 0%;
+          }
+        }
+        
+          /*  div.mobcloud {*/
+          /*  position: relative;*/
+          /*  display: block;*/
+          /*  margin-top: 100%;*/
+          /*  margin-left: -129%;*/
+          /*  width: 265%;*/
+          /*  height: 38%;*/
+          /*}*/
+      
     </style>
-    <script>
-        $('.captionfinal').each(function() {
-          var link = $(this).html();
-          $(this).contents().wrap('<a href="https://www.instagram.com/eltnjosh/"></a>');
-        });
-    </script>
   </head>
   <body>
 
@@ -336,31 +506,56 @@
             <img class="outnow" src="novoutnow1.png"/>
         </div>
         <div class="mobile">
-            <img class="titlem" src="titlemobile.png"/>
-            <img style="overflow-x: hidden;" class="outnowm" src="outnowmobile.png"/>
+            <img class="titlem" src="joshuajanemob.png"/>
+            <img style="overflow-x: hidden;" class="outnowm" src="novoutnowmob.png"/>
         </div>
     </div>
 
-    <div class="purp" style="color: #777;background-color:black;text-align:center;padding:23% 5%;text-align: justify;">
-        <!--^^^was padding:50px 80px;-->
-      <!--<h3 style="text-align:center;">Parallax Demo</h3>-->
-
+    <div class="purp" style="color: #777;background-color:black;text-align:center;padding:6% 5%;text-align: justify;">
 
       <div class="comp">
-            <img class="cloud" src="cover.png"/>
-            <!--play around with switching cloud and ep, see which layout is better-->
-            <iframe class="ep" width="20%" height="65%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1198992997&amp;color=%238c92b8&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/josh-carlson-844874447" title="Josh Carlson" target="_blank" style="color: #cccccc; text-decoration: none;"></a><a href="https://soundcloud.com/josh-carlson-844874447/sets/websitetest-1" title="WebsiteTest" target="_blank" style="color: #cccccc; text-decoration: none;"></a></div>
-            <!--<iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:7pXu47GoqSYRajmBCjxdD6&amp;size=detail&amp;theme=dark" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>-->
-            <!--<iframe src="https://open.spotify.com/embed/album/0woDg8EWf32yL9I5bhrGSD" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>-->
+            <img class="layoutl" src="LayoutL.png"/>
+            <img class="layoutr" src="LayoutR.png"/>
+            <iframe class="spotifyfollow" src="https://open.spotify.com/follow/1/?uri=spotify:artist:7pXu47GoqSYRajmBCjxdD6&amp;size=detail&amp;theme=dark" width="20%" height="10%" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+            <iframe class="spotifyalbum" src="https://open.spotify.com/embed/album/0woDg8EWf32yL9I5bhrGSD" width="20%" height="30%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <h5 style="left:15%">
+                <a target="_blank" href="https://www.youtube.com/channel/UC7E1F4LRnt9MAmA3C6GPm_g">Apple</a><br>
+                <a target="_blank" href="https://www.youtube.com/channel/UC7E1F4LRnt9MAmA3C6GPm_g">Spotify</a>
+            </h5>
+            <h5 style="left:67%">
+                <a target="_blank" href="https://audius.co/joshuajanemusic/album/guest-house-28997">Audius</a><br>
+                <a target="_blank" href="https://soundcloud.com/joshuajanemusic/sets/guesthouse">Soundcloud</a>
+            </h5>
+            <h4><br><br><br><br><br><br><br><br><br></h4>
       </div>
+      
+        <div class="spacer">
+            <h4><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h4>
+      </div>
+      
+      <div class="moblayoutl">
+            <img class="layoutl" style="margin-left: 3.8%;" src="LayoutL.png"/>
+      </div>
+      
+      <div class="moblayoutr">
+            <img class="layoutr" style="margin-left: 6.2%;" src="LayoutR.png"/>
+      </div>
+      
       <div class="mobcloud">
-            <iframe class="mobplayer" width="20%" height="65%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1198992997&amp;color=%238c92b8&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/josh-carlson-844874447" title="Josh Carlson" target="_blank" style="color: #cccccc; text-decoration: none;"></a><a href="https://soundcloud.com/josh-carlson-844874447/sets/websitetest-1" title="WebsiteTest" target="_blank" style="color: #cccccc; text-decoration: none;"></a></div>
+            <iframe class="spotifyfollowmob" src="https://open.spotify.com/follow/1/?uri=spotify:artist:7pXu47GoqSYRajmBCjxdD6&amp;size=detail&amp;theme=dark" width="20%" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+            <iframe class="spotifyalbummob" src="https://open.spotify.com/embed/album/0woDg8EWf32yL9I5bhrGSD" width="15%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <!--<p>Apple<br>Spotify<br>Soundcloud<br>Audius</p>-->
+      </div>
+      
+      <div class="moblinks">
+            <h6 style="left:5%">
+                <a target="_blank" href="https://www.youtube.com/channel/UC7E1F4LRnt9MAmA3C6GPm_g">Apple</a><br>
+                <a target="_blank" href="https://www.youtube.com/channel/UC7E1F4LRnt9MAmA3C6GPm_g">Spotify</a><br>
+                <a target="_blank" href="https://audius.co/joshuajanemusic/album/guest-house-28997">Audius</a><br>
+                <a target="_blank" href="https://soundcloud.com/joshuajanemusic/sets/guesthouse">Soundcloud</a>
+            </h6>
       </div>
 
-
-      <div class="mobep">
-            <img class="ep" src="cover.png"/>
-      </div>
 
     </div>
     <div class="bgimg-2">
@@ -371,13 +566,14 @@
     </div>
 
     <div style="position:relative;">
+        <!--<div style="color: #777;background-color:black;text-align:center;text-align: justify;">-->
         <div style="color: #777;background-color:black;text-align:center;padding:6% 5%;text-align: justify;">
           <!--<h3 style="text-align:center;">If I Stay</h3>-->
           
               <!--lyrics-->
               <div class="row">
                   <div class="column">
-                    <h3 style="font: 2vw 'Lato', sans-serif;" >NEVER KNOWS</h3>
+                    <h3 >NEVER KNOWS</h3>
                     <h2 >
                         You know that I'm reckless<br>
                         Stay with me regardless<br>
@@ -421,7 +617,7 @@
                     </h2>
                   </div>
                   <div class="column">
-                    <h3 style="font: 2vw 'Lato', sans-serif;" >IF I STAY</h3>
+                    <h3 >IF I STAY</h3>
                     <h2 >
                         How long until you tell me<br>
                         The words you want to hear<br>
@@ -439,7 +635,8 @@
                         If I fell for you<br>
                         
                         Two weeks now I'm getting lonely<br>
-                        Too fast won't you hold me slowly baby<br>
+                        Too fast won't you hold me slowly<br>
+                        Baby<br>
                         No clue when she's getting home<br>
                         To Malibu where I cling to my phone<br>
                         Now can't we<br>
@@ -460,7 +657,7 @@
                     </h2>
                   </div>
                   <div class="column">
-                    <h3 style="font: 2vw 'Lato', sans-serif;" >WIRES</h3>
+                    <h3 >WIRES</h3>
                     <h2 >
                         The wires come undone<br>
                         Fire in my lungs<br>
@@ -507,7 +704,7 @@
     <div class="bgimg-4">
       <div class="caption">
         <!--<span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>-->
-        <span class="border">Lyrics</span>
+        <span class="border"></span>
       </div>
     </div>
 
@@ -516,15 +713,15 @@
       <div style="color: #777;background-color:black;text-align:center;padding:6% 5%;text-align: left;">
             <div class="row">
                   <div class="column2">
-                    <h3 style="font: 2vw 'Lato', sans-serif;" >YOU LET GO</h3>
+                    <h3 >YOU LET GO</h3>
                     <h2 >
-                        You tell me you're heading home<br>
-                        Coming back<br>
+                        You tell me you'll make it up<br>
+                        Send it back<br>
                         The waves crash<br>
-                        Flying up the coast to see you<br>
-                        Late nights<br>
-                        The only time we feel alive<br>
-                        Just us two<br>
+                        Landing well baby for you<br>
+                        And you tell me<br>
+                        We can go whenever<br>
+                        And I can stay<br>
                         
                         But if your heart changes<br>
                         By the time we arrive<br>
@@ -542,11 +739,11 @@
                         The waves crash<br>
                         Sound never seems to come through<br>
                         We're drifting<br>
-                        But neither one seems to care<br>
-                        Split in two<br>
+                        At least we both feel the same<br>
+                        Cut in two<br>
                         
                         Back to our summer in Michigan<br>
-                        Cross the country just to see you again<br>
+                        Crossed the country just to see you again<br>
                         Never thought that you and me would end<br>
                         
                         And then you let go<br>
@@ -554,7 +751,7 @@
                     </h2>
                   </div>
                   <div class="column3">
-                    <h3 style="font: 2vw 'Lato', sans-serif;" >MAKE IT THROUGH</h3>
+                    <h3 >MAKE IT THROUGH</h3>
                     <h2 >
                         I've been feeling lonely and<br>
                         You're my one and only so<br>
@@ -587,10 +784,14 @@
                         Let's take it slow now<br>
                         My darling how could we<br>
                         
-                        My baby she tells me what I wanna hear<br>
-                        I lie in her arms while her smile disappears<br>
-                        Cuz she never tells me what's on her mind<br>
-                        So long my love guess it wasn't our time<br>
+                        My baby she tells me<br>
+                        What I wanna hear<br>
+                        I lie in her arms<br>
+                        While her smile disappears<br>
+                        Cuz she never tells me<br>
+                        What's on her mind<br>
+                        So long my love<br>
+                        Guess it wasn't our time<br>
                         
                         I've been feeling lonely and<br>
                         You're my one and only so<br>
@@ -620,12 +821,12 @@
     <div style="position:relative;">
       <div style="color: #777;background-color:black;text-align:center;padding:28% 5%;text-align: left;">
         <div class="comp">
-            <img class="cloud" src="about.png"/>
-            <p class="ep">Joshua Jane is a multi instrumentalist-producer from Malibu, California. After setting up a home studio during quarantine,
+            <img style="top:30%" class="cloud" src="about.png"/>
+            <p style="top:30%" class="ep">Joshua Jane is a multi instrumentalist-producer from Malibu, California. After setting up a home studio during quarantine,
             he released his debut EP 'Guest House' in February, 2021. Joshua currently runs the recording studio at Middlebury College and has studied 
             with 
             <!--<br>-->
-            <a target="_blank" href="https://twitter.com/toekneesings?lang=en">Tony Hundtoft</a>, 
+            <a target="_blank" href="https://www.youtube.com/channel/UC7E1F4LRnt9MAmA3C6GPm_g">Tony Hundtoft</a>, 
             <!--<a target="_blank" href="https://www.facebook.com/Upstartmusic/">(Upstart)</a>,-->
             <!--<br>-->
             <a target="_blank" href="http://www.bradbabinski.com/">Brad Babinski</a>, 
@@ -634,34 +835,37 @@
             and <a target="_blank" href="http://www.ericslick.com">Eric Slick</a>. 
             <!--<a target="_blank" href="https://www.drdogmusic.com/">(Dr. Dog)</a>.-->
             </p>
-      </div>
         </div>
         
-      <div class="mobcloud">
-            <p style="font-size: 4vw" class="mobplayer">Joshua Jane is a multi instrumentalist-producer from Malibu, California. After setting up a home studio during quarantine,
-            he released his debut EP 'Guest House' in February, 2021. 
-            Joshua currently runs the recording studio at Middlebury College and has studied             with 
-            <!--<br>-->
-            <a target="_blank" href="https://twitter.com/toekneesings?lang=en">Tony Hundtoft</a>, 
-            <!--<a target="_blank" href="https://www.facebook.com/Upstartmusic/">(Upstart)</a>,-->
-            <!--<br>-->
-            <a target="_blank" href="http://www.bradbabinski.com/">Brad Babinski</a>, 
-            <!--<a target="_blank" href="http://www.bradbabinski.com/">(Steady Holiday)</a>, -->
-            <!--<br>-->
-            and <a target="_blank" href="http://www.ericslick.com">Eric Slick</a>.
-            <!--<a target="_blank" href="https://www.drdogmusic.com/">(Dr. Dog)</a>.-->
-            </p>
+        
+          <div class="mobcloud">
+                <p style="font-size: 4vw" class="mobplayer">Joshua Jane is a multi instrumentalist-producer from Malibu, California. After setting up a home studio during quarantine,
+                he released his debut EP 'Guest House' in February, 2021. 
+                Joshua currently runs the recording studio at Middlebury College and has studied             with 
+                <!--<br>-->
+                <a target="_blank" href="https://www.youtube.com/channel/UC7E1F4LRnt9MAmA3C6GPm_g">Tony Hundtoft</a>, 
+                <!--<a target="_blank" href="https://www.facebook.com/Upstartmusic/">(Upstart)</a>,-->
+                <!--<br>-->
+                <a target="_blank" href="http://www.bradbabinski.com/">Brad Babinski</a>, 
+                <!--<a target="_blank" href="http://www.bradbabinski.com/">(Steady Holiday)</a>, -->
+                <!--<br>-->
+                and <a target="_blank" href="http://www.ericslick.com">Eric Slick</a>.
+                <!--<a target="_blank" href="https://www.drdogmusic.com/">(Dr. Dog)</a>.-->
+                </p>
+          </div>
       </div>
 
-
       <div class="mobep">
-            <img class="ep" src="about.png"/>
+            <img class="ep" style="margin-top: -33%; margin-left: 7.5%;" src="about.png"/>
       </div>
 
     </div>
     <div class="bgimg-1">
       <div class="tag">
         <span class="border"><a target="_blank" href="http://www.instagram.com/joshuajanemusic/">@joshuajanemusic</a></span>
+      </div>
+      <div class="tagmob">
+        <span class="border"><a target="_blank" href="http://www.instagram.com/joshuajanemusic/">@joshua<br>&nbsp;jane<br>&nbsp;&nbsp;music</a></span>
       </div>
     </div>
   </body>
